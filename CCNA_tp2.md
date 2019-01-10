@@ -24,6 +24,7 @@ Adresse réseau(dec) : 192.168.1.0
 Adresse Broadcast : 192.168.1.255
 
 **Interface Ethernet:**
+
 Nom : Realtek PCIe GBE Family Controller
 
 Adresse MAC : D0-17-C2-1F-35-B0
@@ -37,7 +38,6 @@ Adresse Broadcast : Aucune, non connecté
 **Gateway / Passerelle:** 192.168.1.1
 
 **GUI:**
-
 Paramètres réseau et internet -> Propriété réseau (tout est dedans)
 
 **La gateway dans le réseau d'Ingésup ?**
