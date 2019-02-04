@@ -134,15 +134,20 @@ Pour terminer, le client va envoyer un paquet ACK au serveur qui va servir d'acc
 Flags: 0x010 (ACK)
 ```
 Le client va enfin pouvoir envoyer le message grace à un paquet PSH-ACK 
+
 Le serveur lui envoie un "accusé de réception" avec un paquet ACK
 ![](https://i.imgur.com/pHkKvTB.png)
 *Le message est bien transmit*
 
 **Fermeture du port:**
+
 Demande du Client d'une connexion sur le port 8888 en TCP/SYN
+
 ![](https://i.imgur.com/GGmqF0p.png)
 *Bloquage -> ICMP Type: 3 (Destination unreachable), Code: 10 (Host administratively prohibited)*
+
 Impossibilité de créer la connexion sur le port 8888 etant fermé.
+
 La conversation tcp prend fin
 
 #### **C. Interception d'un trafic HTTP (BONUS)**
