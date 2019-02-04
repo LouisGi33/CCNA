@@ -113,9 +113,8 @@ Au lieu de cela, il voit seulement qu'il est connecté via Ethernet à un routeu
 scp loki@10.1.0.254:/home/loki/ping.pcap C:\Users\loulo\Desktop
 ```
 
-4- Ayant mis la carte réseau 10.2.0.1 sous écout, ce que l'on voit sont les requetes faites entre le Broadcast (en 10.2.0.254) et le Server (en 10.2.0.10) tous deux sur la carte réseau 10.2.0.1, il nous manque donc le chemin entre Client (10.1.0.10) et Router coté Client ( carte réseau 10.1.0.1 dont son Boadcast 10.1.0.254)
-
-il aurait fallut mettre la 10.1.0.1 sous ecout pour avoir la Capture réseau de ce chemin.
+4- Ayant mis la carte réseau 10.2.0.1 sous écout, ce que l'on voit sont les requetes ARP faites entre le Broadcast (en 10.2.0.254) et le Server (en 10.2.0.10) tous deux sur la carte réseau 10.2.0.1, il nous manque donc le chemin entre Client (10.1.0.10) et Router coté Client ( carte réseau 10.1.0.1 dont son Boadcast 10.1.0.254)
+De la Frame 4 à 11, on voit l'echange netcat effectué entre le Client ( 10.1.0.10 ) et le Server ( 10.2.0.10 )
 
 ![](https://i.imgur.com/mDhLulM.png)
 
